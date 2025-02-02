@@ -80,7 +80,7 @@ const AppointmentForm = () => {
       ...prev,
       [name]: value
     }));
-    // Limpiar error del campo cuando se modifica
+    // Limpiar error
     if (errors[name]) {
       setErrors(prev => ({
         ...prev,

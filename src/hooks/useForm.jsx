@@ -1,4 +1,3 @@
-// hooks/useForm.jsx
 import { useState, useEffect } from 'react';
 
 const useForm = (initialState = {}, validationRules = {}) => {

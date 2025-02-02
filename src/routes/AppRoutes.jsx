@@ -1,4 +1,3 @@
-// routes/AppRoutes.jsx
 import { Routes, Route, Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import Home from "../pages/Home";

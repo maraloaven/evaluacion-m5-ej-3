@@ -9,10 +9,9 @@ const AppointmentsList = () => {
   const { isAuthenticated, logout } = useAuth();
   const navigate = useNavigate();
 
-  // Simular una API call
+  // Simulando API call
   const fetchAppointments = async () => {
     try {
-      // Simulación de llamada a API
       const response = await new Promise((resolve) => 
         setTimeout(() => resolve([
           { 
@@ -55,7 +54,6 @@ const AppointmentsList = () => {
 
   const handleCancelAppointment = async (id) => {
     try {
-      // Simulación de llamada a API para cancelar
       await new Promise(resolve => setTimeout(resolve, 500));
       setAppointments(prev => prev.filter(app => app.id !== id));
     } catch (err) {
